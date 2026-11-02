@@ -1,17 +1,16 @@
 CXX = g++
-CXXFLAGS = -std=c++20 -O3 -Wall -Wextra
-TARGET = bin/newton
-
-SRCS = $(wildcard src/*.cpp src/*/*.cpp)
+CXXFLAGS = -std=c++20 -O3 -Wall -Wextra -fsanitize=address -g  -Werror
+BUILD = build
+SRC = src
+INCLUDE = include
+INTERNAL = internal
+DIRS = $(SRC) $(INTERNAL)
+OBJECTS = $(shell find $(DIRS) -name ".*cpp" )
 
 all:
-	@mkdir -p build
-	@for file in $(SRCS); do \
-		obj="build/$$(basename $$file .cpp).o"; \
-		echo "Compiling $$file..."; \
-		$(CXX) $(CXXFLAGS) -c $$file -o $$obj || exit 1; \
-	done
-	$(CXX) build/*.o -o $(TARGET)
+	mkdir -p $(BUILD)
+	$(CXX) $(OBJECTS) $(CXXFLAGS) -T linker.ld -I$(INCLUDE)
+
 
 clean:
 	rm -rf build $(TARGET)
