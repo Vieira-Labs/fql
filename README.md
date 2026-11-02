@@ -18,7 +18,7 @@ Newton is a programming language under development, designed for mathematicians 
 Variable declaration:
  
 ```
-var variavel := 10
+var variable := 10
 ```
  
 **Running**
