@@ -1,15 +1,15 @@
 CXX = g++
-CXXFLAGS = -std=c++20 -O3 -Wall -Wextra -fsanitize=address -g  -Werror
+CXXFLAGS = -std=c++20 -O3 -fsanitize=address -g  
 BUILD = build
 SRC = src
 INCLUDE = include
 INTERNAL = internal
 DIRS = $(SRC) $(INTERNAL)
-OBJECTS = $(shell find $(DIRS) -name ".*cpp" )
+OBJECTS = $(shell find $(DIRS) -name "*.cpp" )
 
 all:
 	mkdir -p $(BUILD)
-	$(CXX) $(OBJECTS) $(CXXFLAGS) -T linker.ld -I$(INCLUDE)
+	$(CXX) $(OBJECTS) $(CXXFLAGS) -I$(INCLUDE) -o bin/newton
 
 
 clean:
