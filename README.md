@@ -25,7 +25,6 @@ FQL is a programming language under development, designed for file query and wri
  
 > For now the `-f` / `--file` option exists on the command line but does not read the file yet. The executable processes a hardcoded snippet of code and prints the tokens recognized by the lexer.
  
-           |
  
  
 ### Project tree
