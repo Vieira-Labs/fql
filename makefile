@@ -9,7 +9,7 @@ OBJECTS = $(shell find $(DIRS) -name "*.cpp" )
 
 all:
 	mkdir -p $(BUILD)
-	$(CXX) $(OBJECTS) $(CXXFLAGS) -I$(INCLUDE) -o bin/newton
+	$(CXX) $(OBJECTS) $(CXXFLAGS) -I$(INCLUDE) -o bin/fql
 
 
 clean:
