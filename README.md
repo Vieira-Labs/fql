@@ -81,3 +81,4 @@ make clean
 - [Victorrvs28] ([Victorrvs28](https://github.com/Victorrvs28)) - [lexer]
 - Organization: [Vieira-Labs](https://github.com/Vieira-Labs)
 - [CLI11](https://github.com/CLIUtils/CLI11), the command line library used in the project.
+- [Nightmare.cfg] ([@Ryuzaki-Nightmare ](https://github.com/Ryuzaki-Nightmare)) - [makefile]
