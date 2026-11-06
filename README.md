@@ -3,7 +3,7 @@
 
 --- 
 
-### What is the Newton language
+### What is the FQL language
  
 FQL is a programming language under development, designed for file query and written in C++. The goal is to offer a eficient, fast and powerful query.  
  
@@ -20,7 +20,7 @@ FQL is a programming language under development, designed for file query and wri
 **Running**
  
 ```bash
-./bin/newton -f file
+./bin/fql -f file
 ```
  
 > For now the `-f` / `--file` option exists on the command line but does not read the file yet. The executable processes a hardcoded snippet of code and prints the tokens recognized by the lexer.
