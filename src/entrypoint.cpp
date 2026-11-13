@@ -16,6 +16,7 @@
 #include <iostream>
 #include "../include/lexer/lexer.h"
 #include <string>
+#include "../include/parser/parser.h"
 #include "../include/cli11.hpp"
 #include <cstdlib>
 #include <fstream>
@@ -44,10 +45,17 @@ int main(int argc, char** argv){
         string line;
         cout<<">";
         getline(cin, line);
-        code += line;
-        if(line == "return") break;
 
+        if(line == "return") break;
+        code += line + '\n';
     }
- 
+
+    cout<<"applying code to file...\n";
+    ofstream codefile("CODE");
+    codefile << code;
+    codefile.close();
+
+    cout<<"parsing..\n";
+    int parser_return_code = parser("CODE");
     return 0;
 }
