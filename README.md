@@ -31,22 +31,26 @@ FQL is a programming language under development, designed for file query and wri
  
 ```
 .
-├── bin - where the executable will be placed on build
-│   
-├── build - objects here
-├── commits - commits number, useful for showing the program version
+├── bin - where fql executable will be placed
+│
+├── build - objects
+│  
+├── commits - number of commit, usable for showing version
 ├── include
-│   ├── cli11.hpp
-│   └── lexer
-│       └── lexer.h
-├── internal - internal organization stuff, its not useful for common people.
-│   └── cargos.ods
+│   ├── cli11.hpp - command parsing library
+│   ├── lexer
+│   │   └── lexer.h
+│   └── parser
+│       └── parser.h
+├── internal - internal stuff, nothing interesting for non vieira labs members.
 ├── makefile
 ├── README.md
 └── src
-    ├── entrypoint.cpp - entry point
-    └── lexer
-        └── lexer.cpp
+    ├── entrypoint.cpp - entry point. reads the commands and calls the parse function.
+    ├── lexer
+    │   └── lexer.cpp
+    └── parser
+        └── parser.cpp
 
 
 ```
@@ -61,13 +65,13 @@ FQL is a programming language under development, designed for file query and wri
  
 ```bash
 git clone https://github.com/Vieira-Labs/newton.git
-cd newton
+cd fql
 mkdir -p bin
 make
-./bin/newton
+./bin/fql
 ```
  
-`make` compiles every file in `src/` into `build/` and produces the executable at `bin/newton`. To remove generated files:
+`make` compiles every file in `src/` into `build/` and produces the executable at `bin/fql`. To remove generated files:
  
 ```bash
 make clean
