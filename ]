@@ -1,0 +1,156 @@
+[33mcommit 8e5da8c7b5d060f2537abb7e279bf418433edeb1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: victor vieira <idk@idk.idk>
+Date:   Fri Nov 13 17:53:08 2026 -0300
+
+    implemented a parser that detects a sample.
+
+[33mcommit 3806844b99da461c9851b9026d1c056f038720a8[m
+Author: victor vieira <idk@idk.idk>
+Date:   Fri Nov 13 17:38:21 2026 -0300
+
+    added syntax document
+
+[33mcommit e717384cd67f97d4e1cc5f4c0d2514a04b20f061[m
+Author: victor vieira <idk@idk.idk>
+Date:   Fri Nov 13 17:37:59 2026 -0300
+
+    updated cargos doc
+
+[33mcommit b3ce17e4bf656e1776552bc18fa3794ecb105e12[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 17:32:55 2026 -0400
+
+    added nightmare.cfg
+
+[33mcommit 63ad072702c2b768dfddbb2ffac6f8221139f6c5[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 15:16:45 2026 -0400
+
+    fixed the weird pipe after the running section.
+
+[33mcommit 27879fdad272327cbbda11f893539f8d75ad4161[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 15:13:02 2026 -0400
+
+    .
+
+[33mcommit 2dc03ccd5a61c828b35a9e61c4bcaededd98c2eb[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 15:12:49 2026 -0400
+
+    renamed newton to fql
+
+[33mcommit 16eee74ee614597af532ccaaf27becd4da6e4937[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 15:12:21 2026 -0400
+
+    commits number, useful for showing the version.
+
+[33mcommit 66cdbc0b1c6f286087e0de2e9148249ac98546a0[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 15:11:26 2026 -0400
+
+    renamed newton to fql and changed its purpose
+
+[33mcommit 564e83bf99eb2cf77151f5b81e16d5c50c34aed9[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 15:03:01 2026 -0400
+
+    contains a integrated text editor and shows the tokens
+
+[33mcommit 3e292c1b724bde9fce33e9611f637ad151438e35[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 15:02:12 2026 -0400
+
+    now lexer returns a vector it just have the token values. token types are uselless right now.
+
+[33mcommit cfb6e83d0fce744eede229a303e75156f9181ca7[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Wed Nov 4 15:00:29 2026 -0400
+
+    fixed makefile: now it builds correctly.
+
+[33mcommit 3b1573411f294b31828abd5bdb3718b437261a65[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 19:02:15 2026 -0300
+
+    updated readme from portuguese to english terms
+
+[33mcommit f590adfa35d30c05282890435f9a91d37db92fe9[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 18:59:23 2026 -0300
+
+    added martins and anônimo
+
+[33mcommit c736056655b052af43cc64f708791ee55e964fc5[m
+Merge: 803b8d9 e02df3d
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 18:50:14 2026 -0300
+
+    Merge branch 'main' of https://github.com/Vieira-Labs/newton
+
+[33mcommit 803b8d92f2260c38713e77d5fc2907934a49b3e4[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 18:49:38 2026 -0300
+
+    made readme first version
+
+[33mcommit e02df3d26d911c36da284706c35551518415cd6f[m
+Author: Ryuzaki-Nightmare <jorgew965@gmail.com>
+Date:   Mon Nov 2 18:44:49 2026 -0300
+
+    UPD makefile
+
+[33mcommit ac4c4da95bdd2999aee8c6d456ee198976b2d71e[m
+Author: Ryuzaki-Nightmare <jorgew965@gmail.com>
+Date:   Mon Nov 2 18:33:45 2026 -0300
+
+    Add linker.ld
+
+[33mcommit 61378029180f482b199044bd6d0ebe063329d69b[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 18:21:40 2026 -0300
+
+    added cargos spreadsheet
+
+[33mcommit 904caaa1e74f9d50cb7a833a09b7a427e2546f1b[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 14:03:26 2026 -0300
+
+    added lexer and made entrypoint cout the tokens
+
+[33mcommit 353b9c65ae7f8df3cb15f8f3c5ef277332cf80fb[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 14:03:05 2026 -0300
+
+    fixed makefile
+
+[33mcommit 2d6b5bbcf7f184383a49e1b56d89c962eb81c8b2[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 13:27:15 2026 -0300
+
+    added gitignore
+
+[33mcommit ba45b36d3450f354bfa32c571541ba6bdda25a4c[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 12:17:55 2026 -0300
+
+    added entry point
+
+[33mcommit 7d4801331fe9752f7681281601c8a8fc01a30dbf[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 12:11:51 2026 -0300
+
+    added cli11 library
+
+[33mcommit 7cdcf2f75fdfeb3a0a4be381f85a07fc41ceea62[m[33m ([m[1;32madd-lexer[m[33m)[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Mon Nov 2 12:05:11 2026 -0300
+
+    added structure
+
+[33mcommit 9f7e53ade170a60668048c021eabea750b70cf19[m
+Author: Victor Vieira <idk@idk.idk>
+Date:   Sat Oct 31 06:16:03 2026 -0700
+
+    first commit

@@ -7,7 +7,7 @@
  
 FQL is a programming language under development, designed for file query and written in C++. The goal is to offer a eficient, fast and powerful query.  
  
-**Status:** very early version. A basic lexer exists; the parser and the interpreter are under development.
+**Status:** very early version. lexer and parser works, but the interpreter are not done yet.
  
 ### Usage documentation
  
@@ -20,11 +20,9 @@ FQL is a programming language under development, designed for file query and wri
 **Running**
  
 ```bash
-./bin/fql -f file
+./bin/fql 
 ```
- 
-> For now the `-f` / `--file` option exists on the command line but does not read the file yet. The executable processes a hardcoded snippet of code and prints the tokens recognized by the lexer.
- 
+
  
  
 ### Project tree
