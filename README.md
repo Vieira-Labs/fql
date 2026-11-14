@@ -1,63 +1,58 @@
-# Newton
-> A programming language for mathematicians, written in C++.
+# FQL
+> A programming language for file query, written in C++.
 
----
+--- 
 
-### What is the Newton language
+### What is the FQL language
  
-Newton is a programming language under development, designed for mathematicians and written in C++. The goal is to offer a syntax close to mathematical notation, with better performance than math libraries in Python.
+FQL is a programming language under development, designed for file query and written in C++. The goal is to offer a eficient, fast and powerful query.  
  
-**Status:** very early version. A basic lexer exists; the parser and the interpreter are under development.
+**Status:** very early version. lexer and parser works, but the interpreter are not done yet.
  
 ### Usage documentation
  
 > The language is just getting started, so this section will grow along with the project.
  
 **Current syntax**
- 
-Variable declaration:
- 
-```
-var variavel := 10
-```
+ > it does not contains a parser and interpreter yet, so the usage is not possible
+
  
 **Running**
  
 ```bash
-./bin/newton -f file
+./bin/fql 
 ```
+
  
-> For now the `-f` / `--file` option exists on the command line but does not read the file yet. The executable processes a hardcoded snippet of code and prints the tokens recognized by the lexer.
- 
-**Tokens recognized by the lexer**
- 
-The lexer prints one line per token, in the format `[TYPE], lexeme`.
- 
-| Token               | Lexeme            | Description                        |
-|---------------------|-------------------|------------------------------------|
-| `[TOKEN_VAR]`       | `var`             | Declaration keyword                |
-| `[TOKEN_VAR_NAME]`  | variable name     | Identifier after `var`             |
-| `[TOKEN_ATTRIBUTION]` | `:=`            | Assignment operator                |
- 
-Coming soon: numeric literals, math operators, functions, vectors and matrices.
  
 ### Project tree
  
 <!-- Confirm with `tree -I 'build|bin'` and update if there are more files. -->
  
 ```
-newton/
-├── include/
-│   ├── cli11.hpp          # CLI11 library (command line)
-│   └── lexer/
-│       └── lexer.h        # lexer declaration
-├── src/
-│   ├── entrypoint.cpp     # entry point (main) and CLI options
-│   └── lexer/
-│       └── lexer.cpp      # lexer: turns source code into tokens
-├── .gitignore
+.
+├── bin - where fql executable will be placed
+│
+├── build - objects
+│  
+├── commits - number of commit, usable for showing version
+├── include
+│   ├── cli11.hpp - command parsing library
+│   ├── lexer
+│   │   └── lexer.h
+│   └── parser
+│       └── parser.h
+├── internal - internal stuff, nothing interesting for non vieira labs members.
 ├── makefile
-└── README.md
+├── README.md
+└── src
+    ├── entrypoint.cpp - entry point. reads the commands and calls the parse function.
+    ├── lexer
+    │   └── lexer.cpp
+    └── parser
+        └── parser.cpp
+
+
 ```
  
 ### Building
@@ -70,13 +65,13 @@ newton/
  
 ```bash
 git clone https://github.com/Vieira-Labs/newton.git
-cd newton
+cd fql
 mkdir -p bin
 make
-./bin/newton
+./bin/fql
 ```
  
-`make` compiles every file in `src/` into `build/` and produces the executable at `bin/newton`. To remove generated files:
+`make` compiles every file in `src/` into `build/` and produces the executable at `bin/fql`. To remove generated files:
  
 ```bash
 make clean
@@ -88,3 +83,4 @@ make clean
 - [Victorrvs28] ([Victorrvs28](https://github.com/Victorrvs28)) - [lexer]
 - Organization: [Vieira-Labs](https://github.com/Vieira-Labs)
 - [CLI11](https://github.com/CLIUtils/CLI11), the command line library used in the project.
+- [Nightmare.cfg] ([@Ryuzaki-Nightmare ](https://github.com/Ryuzaki-Nightmare)) - [makefile]

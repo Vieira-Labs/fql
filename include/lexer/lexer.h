@@ -1,3 +1,4 @@
 #pragma once
+#include <vector>
 #include <string>
-std::string lexer(std::string content);
+std::vector<std::string> lexer(std::string content);
